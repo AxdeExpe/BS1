@@ -60,8 +60,7 @@ count()
 {
     #zählt die Zeilen, erste Zeile wird nicht mitgezählt
     count=$(wc -l < $File)
-    eins='1'
-    echo "Anzahl der Einträge:" $count
+    echo "Anzahl der Einträge:" $((count-1))
     exit 0
 }
 
